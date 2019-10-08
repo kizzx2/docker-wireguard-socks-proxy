@@ -20,7 +20,7 @@ Alternatively, you can use `docker run` directly if you want to customize things
 ```bash
 docker run -it --rm --cap-add=NET_ADMIN \
     --name wireguard-socks-proxy \
-    --volume /directory/containing/your/wireguard/conf/file/:/etc/openvpn/:ro \
+    --volume /directory/containing/your/wireguard/conf/file/:/etc/wireguard/:ro \
     -p 1080:1080 \
     kizzx2/wireguard-socks-proxy
 ```
